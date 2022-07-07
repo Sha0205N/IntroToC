@@ -1,3 +1,5 @@
 ﻿  Source.c
-C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\Intro\Source.c(4,32): warning C4013: 'GetFibonacciVal' undefined; assuming extern returning int
+C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\Intro\point.c(6,20): warning C4091: 'extern ': ignored on left of 'point' when no variable is declared
+C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\Intro\Source.c(6,1): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\Intro\Source.c(7,1): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   Intro.vcxproj -> C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\x64\Debug\Intro.exe

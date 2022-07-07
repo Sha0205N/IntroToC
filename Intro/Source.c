@@ -1,15 +1,18 @@
 #include <stdio.h>
+#include <math.h>
 #include "point.c"
 
-int main() {
-	point p;
-	printf("%d\n", GetFibonacciVal(3));
-	return 0;
+point getFurtherPoint(point p1, point p2) {
+	int distance1 = pow(p1.x, p1.x) * pow(p1.y, p1.y);
+	int distance2 = pow(p2.x, p2.x) * pow(p2.y, p2.y);
+	if (distance1 > distance2) {
+		return p1;
+	}
+	else {
+		return p2;
+	}
 }
-point GetFurtherPoint() {
-
-}
-int GetFibonacciVal(int index) {
+int getFibonacciVal(int index) {
 	//index starts from 0
 	int i = 0;
 	int num1 = 0;
@@ -28,5 +31,18 @@ int printEmpire(int num) {
 	for (i = 1; i <= num; i++) {
 		printf("Mamas %d Empire!\n", i);
 	}
+	return 0;
+}
+
+int main() {
+	point p1;
+	p1.x = 1;
+	p1.y = 1;
+	point p2;
+	p2.x = 1;
+	p2.y = 2;
+	point p = getFurtherPoint(p1, p2);
+	printf("%d\n", p.x);
+	printf("%d\n", p.y);
 	return 0;
 }

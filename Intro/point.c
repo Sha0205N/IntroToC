@@ -1,6 +1,6 @@
 typedef struct {
     int x;
-    int y;
+    int y;  
 } point;
 
 extern struct point;
