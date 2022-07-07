@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 #include "point.c"
+#include "rectangle.c"
 
-point getFurtherPoint(point p1, point p2) {
-	int distance1 = pow(p1.x, p1.x) * pow(p1.y, p1.y);
-	int distance2 = pow(p2.x, p2.x) * pow(p2.y, p2.y);
-	if (distance1 > distance2) {
-		return p1;
+int printEmpire(int num) {
+	int i;
+	for (i = 1; i <= num; i++) {
+		printf("Mamas %d Empire!\n", i);
 	}
-	else {
-		return p2;
-	}
+	return 0;
 }
+
 int getFibonacciVal(int index) {
 	//index starts from 0
 	int i = 0;
@@ -26,12 +25,19 @@ int getFibonacciVal(int index) {
 	}
 	return num1;
 }
-int printEmpire(int num) {
-	int i;
-	for (i = 1; i <= num; i++) {
-		printf("Mamas %d Empire!\n", i);
+
+point getFurtherPoint(point p1, point p2) {
+	int distance1 = pow(p1.x, p1.x) * pow(p1.y, p1.y);
+	int distance2 = pow(p2.x, p2.x) * pow(p2.y, p2.y);
+	if (distance1 > distance2) {
+		return p1;
 	}
-	return 0;
+	else {
+		return p2;
+	}
+}
+int getRectangleArea(rectangle r) {
+
 }
 
 int main() {
