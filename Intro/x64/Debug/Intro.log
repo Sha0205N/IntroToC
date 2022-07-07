@@ -1,0 +1,3 @@
+﻿  Source.c
+C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\Intro\Source.c(4,13): warning C4013: 'printEmpire' undefined; assuming extern returning int
+  Intro.vcxproj -> C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\x64\Debug\Intro.exe
