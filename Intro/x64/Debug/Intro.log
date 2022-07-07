@@ -3,4 +3,5 @@ C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\Intro\point.c(6,20): warning C409
 C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\Intro\rectangle.c(6,24): warning C4091: 'extern ': ignored on left of 'rectangle' when no variable is declared
 C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\Intro\Source.c(31,1): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\Intro\Source.c(32,1): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\Intro\Source.c(81,25): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
   Intro.vcxproj -> C:\Users\shaha\OneDrive\Desktop\MMS\C\IntroToC\x64\Debug\Intro.exe

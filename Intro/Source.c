@@ -57,7 +57,6 @@ bool canBeContained(rectangle r1, rectangle r2) {
 	return r1.height < r2.height&& r1.width < r2.width;
 }
 
-
 int getFibonacciIndex(int number) {
 	//index starts from 0
 	int i = 1;
@@ -78,6 +77,10 @@ int getFibonacciIndex(int number) {
 	}
 }
 
+int getSqrt(int num) {
+	return floor(sqrt(num));
+}
+
 int main() {
-	printf("%d\n", getFibonacciIndex(5));
+	printf("%d\n", getSqrt(3));
 }
