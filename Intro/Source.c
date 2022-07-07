@@ -14,9 +14,9 @@ int printEmpire(int num) {
 
 int getFibonacciVal(int index) {
 	//index starts from 0
-	int i = 0;
-	int num1 = 0;
-	int num2 = 1;
+	int i = 1;
+	int num1 = 1;
+	int num2 = 0;
 	int temp;
 	while (i < index) {
 		temp = num1;
@@ -37,6 +37,7 @@ point getFurtherPoint(point p1, point p2) {
 		return p2;
 	}
 }
+
 int getRectangleArea(rectangle r) {
 	return r.height * r.width;
 }
@@ -55,16 +56,28 @@ rectangle getLargerRectangle(rectangle r1, rectangle r2) {
 bool canBeContained(rectangle r1, rectangle r2) {
 	return r1.height < r2.height&& r1.width < r2.width;
 }
+
+
+int getFibonacciIndex(int number) {
+	//index starts from 0
+	int i = 1;
+	int num1 = 1;
+	int num2 = 0;
+	int temp;
+	while (num1 < number) {
+		temp = num1;
+		num1 += num2;
+		num2 = temp;
+		i++;
+	}
+	if (num1 == number) {
+		return i;
+	}
+	else {
+		return -1;
+	}
+}
+
 int main() {
-	rectangle r1;
-	r1.height = 1;
-	r1.width = 1;
-	rectangle r2;
-	r2.height = 2;
-	r2.width = 2;
-	rectangle r = getLargerRectangle(r1, r2);
-	printf("%d\n", r.height);
-	printf("%d\n", r.width);
-	if(canBeContained(r1, r2))
-		printf("true");
+	printf("%d\n", getFibonacciIndex(5));
 }
