@@ -1,8 +1,13 @@
 #include <stdio.h>
+#include "point.c"
 
 int main() {
+	point p;
 	printf("%d\n", GetFibonacciVal(3));
 	return 0;
+}
+point GetFurtherPoint() {
+
 }
 int GetFibonacciVal(int index) {
 	//index starts from 0
