@@ -37,9 +37,19 @@ point getFurtherPoint(point p1, point p2) {
 	}
 }
 int getRectangleArea(rectangle r) {
-
+	return r.height * r.width;
 }
 
+rectangle getLargerRectangle(rectangle r1, rectangle r2) {
+	int area1 = getRectangleArea(r1);
+	int area2 = getRectangleArea(r2);
+	if (area1 > area2) {
+		return r1;
+	}
+	else {
+		return r2;
+	}
+}
 int main() {
 	point p1;
 	p1.x = 1;
