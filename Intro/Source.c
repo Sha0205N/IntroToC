@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdbool.h>
 #include "point.c"
 #include "rectangle.c"
 
@@ -50,15 +51,20 @@ rectangle getLargerRectangle(rectangle r1, rectangle r2) {
 		return r2;
 	}
 }
+
+bool canBeContained(rectangle r1, rectangle r2) {
+	return r1.height < r2.height&& r1.width < r2.width;
+}
 int main() {
-	point p1;
-	p1.x = 1;
-	p1.y = 1;
-	point p2;
-	p2.x = 1;
-	p2.y = 2;
-	point p = getFurtherPoint(p1, p2);
-	printf("%d\n", p.x);
-	printf("%d\n", p.y);
-	return 0;
+	rectangle r1;
+	r1.height = 1;
+	r1.width = 1;
+	rectangle r2;
+	r2.height = 2;
+	r2.width = 2;
+	rectangle r = getLargerRectangle(r1, r2);
+	printf("%d\n", r.height);
+	printf("%d\n", r.width);
+	if(canBeContained(r1, r2))
+		printf("true");
 }

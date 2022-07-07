@@ -21,5 +21,8 @@
     <ClCompile Include="point.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="rectangle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
